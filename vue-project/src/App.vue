@@ -1,21 +1,12 @@
 <script>
 export default {
-  data() {return {date:'10'},
-  methods: {
-	show: function() {
-    let text = this.cape(this.date);
-    alert(this.text);
-  },
-  cape: function(str) {return str[0].toUpperCase() + str.slice(1);}
-}
+  data() {return {num1:2,num2:3,},
+  methods: {show: function(str) {alert(str*this.num1, str * this.num2);}}
 }
 </script>
 <template>
-<div>{{ 
-<template>
-  <button @mouseover="show">text</button>
-</template> 
-}}</div> 
+	<button @click="show('text1')">btn1</button>
+	<button @click="show('text2')">btn2</button>
 </template>
 
 <style scoped>

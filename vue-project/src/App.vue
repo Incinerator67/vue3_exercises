@@ -1,11 +1,11 @@
 <script>
 export default {
-  data() {return {arr: [1, 2, 3],}
+  data() {return {obj: {x: 1, y: 2, z: 3}}
 }
 }
 </script>
 <template>
-<div>{{ sum(arr) }}</div> 
+<div>{{ obj['x']+ obj['y']+obj['z'] }}</div> 
 </template>
 
 <style scoped>

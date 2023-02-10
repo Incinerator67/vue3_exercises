@@ -1,11 +1,11 @@
 <script>
 export default {
-  data() {return {text: 'page',href: 'page.html',}
+  data() {return {num1: 1,num2: 2,num3: 3,}
 }
 }
 </script>
 <template>
-<a href:src="page.html">page</a>
+<div>{{ num1 + num2 + num3 }}</div> 
 </template>
 
 <style scoped>

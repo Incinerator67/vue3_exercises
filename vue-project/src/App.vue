@@ -1,13 +1,12 @@
-<script>
-	export default {
-		name: 'App',
-	}
-</script>
 
+<script>
+  export default {
+    data() {return {name: 'Edem',surn: 'Osmanov',}}
+}
+</script>
 <template>
-	<div>
-		Hello World
-	</div>
+  <p>{{ name }}</p>
+  <p>{{ surn }}</p>
 </template>
 
 <style scoped>

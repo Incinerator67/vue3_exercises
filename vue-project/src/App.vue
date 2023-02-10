@@ -7,7 +7,11 @@ export default {
 }
 </script>
 <template>
-<div>{{ show() }}</div> 
+<div>{{ 
+<template>
+  <button @mouseover="show">text</button>
+</template> 
+}}</div> 
 </template>
 
 <style scoped>

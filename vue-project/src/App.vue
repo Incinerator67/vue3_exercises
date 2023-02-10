@@ -1,11 +1,11 @@
 <script>
 export default {
-  data() {return {num1: 1,num2: 2,num3: 3,}
+  data() {return {arr: [1, 2, 3],}
 }
 }
 </script>
 <template>
-<div>{{ num1 + num2 + num3 }}</div> 
+<div>{{ sum(arr) }}</div> 
 </template>
 
 <style scoped>

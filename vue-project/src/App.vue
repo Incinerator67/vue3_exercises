@@ -1,18 +1,19 @@
 <script>
 export default {
-  data() {return {num1:2,num2:3,},
-  methods: {show: function(str) {alert(str*this.num1, str * this.num2);}}
+  data() {return {text: 'xxx'}},
+  methods: {
+    change: function() {this.text = 'yyy';}
+  }
 }
 </script>
 <template>
-	<button @click="show('text1')">btn1</button>
-	<button @click="show('text2')">btn2</button>
+	{{ text  }}
+  <button @click="change">text</button>
+  <button @click="change">text2</button>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
+header {line-height: 1.5;}
 
 .logo {
   display: block;

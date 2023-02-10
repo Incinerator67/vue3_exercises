@@ -1,12 +1,11 @@
-
 <script>
-  export default {
-    data() {return {name: 'Edem',surn: 'Osmanov',}}
+export default {
+  data() {return {text: 'page',href: 'page.html',}
+}
 }
 </script>
 <template>
-  <p>{{ name }}</p>
-  <p>{{ surn }}</p>
+<a href:src="page.html">page</a>
 </template>
 
 <style scoped>

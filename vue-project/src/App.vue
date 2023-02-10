@@ -7,7 +7,7 @@ export default {
 }
 </script>
 <template>
-	{{ text  }}
+	<p>{{ text  }}</p>
   <button @click="change">text</button>
   <button @click="change">text2</button>
 </template>

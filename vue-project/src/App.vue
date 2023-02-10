@@ -1,15 +1,21 @@
 <script>
 export default {
-  data() {return {text: 'xxx'}},
+  data() {return {name: 'Edem',surn: 'Osmanov',cost:'10',amount:'25'}},
+  computed: {
+    full: function() {return this.name + ' ' + this.surn;},
+    price:function() {return this.cost * this.amount;}
+  },
   methods: {
-    change: function() {this.text = 'yyy';}
+    change: function() {this.cost = '100',this.price = this.cost * this.amount;;}
   }
 }
 </script>
 <template>
-	{{ text  }}
-  <button @click="change">text</button>
-  <button @click="change">text2</button>
+	<p>{{ name }}</p>
+	<p>{{ surn }}</p>
+	<p>{{ full }}</p>
+  <p>{{ price }}</p>
+  <button @click="change">change_cost</button>
 </template>
 
 <style scoped>

@@ -1,8 +1,8 @@
 <script>
 export default {
-  data() {},
+  data() {return {num1: 1,num2: 2,},},
   methods: {
-	show: function() {alert('10.02.2023');}
+	show: function() {alert(this.num1+this.num2);}
 }
 }
 </script>

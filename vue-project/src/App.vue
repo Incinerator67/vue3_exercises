@@ -1,8 +1,12 @@
 <script>
 export default {
-  data() {return {num1: 1,num2: 2,},},
+  data() {return {date:'10'},
   methods: {
-	show: function() {alert(this.num1+this.num2);}
+	show: function() {
+    let text = this.cape(this.date);
+    alert(this.text);
+  },
+  cape: function(str) {return str[0].toUpperCase() + str.slice(1);}
 }
 }
 </script>

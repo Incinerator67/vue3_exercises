@@ -1,13 +1,10 @@
 <script>
 export default {
-  data() {return {visible: true,}},
-  methods: {
-    show: function(str) {alert(this.Wrong);}
-  }
+  data() {return {hidden: true,}},
 }
 </script>
 <template>
-  <p v-if="visible">Something Wrong</p>
+  <p v-if="!hidden">Something Wrong</p>
 </template>
 
 <style scoped>

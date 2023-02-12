@@ -1,13 +1,13 @@
 <script>
 export default {
-  data() {return {Wrong: 'Ссылка'}},
+  data() {return {visible: true,}},
   methods: {
     show: function(str) {alert(this.Wrong);}
   }
 }
 </script>
 <template>
-  <a href="Ssilka" @click="show(num1)">{{ Wrong }}</a>
+  <p v-if="visible">Something Wrong</p>
 </template>
 
 <style scoped>

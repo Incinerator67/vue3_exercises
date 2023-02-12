@@ -1,17 +1,16 @@
 <script>
 export default {
-  data() {return {visible: true}},
+  data() {return {isAdmin: true}},
   methods: {
-    toggle: function() {this.visible = !this.visible;}
+    toggle: function() {this.isAdmin = false;}
   }
   
 }
 </script>
 <template>
-  <button @click="toggle">
-		{{ visible ? 'hide' : 'show' }}
-	</button>
-  <p v-if="visible">Something Wrong</p>
+  <button @click="toggle">toggle</button>
+	<p v-if="isAdmin">Something Wrong</p>
+  <p v-else>Something Wrong 2</p>
 </template>
 
 <style scoped>

@@ -1,13 +1,16 @@
 <script>
 export default {
-  data() {return {items: [1, 2, 3, 4, 5]}},
+  data() {return {arr: ['x', 'y', 'z']}},
   methods: {
     toggle: function() {this.isAuth = !this.isAuth;}
   }
 }
 </script>
 <template>
-  <div v-for="elem in items"><ul>{{ elem*elem}}</ul></div>
+  	<p v-for="(elem, key) in arr">
+		 <ul>{{ key+1 }}</ul> 
+     {{ elem }}
+	</p>
 </template>
 
 <style scoped>

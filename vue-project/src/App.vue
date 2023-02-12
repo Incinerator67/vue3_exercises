@@ -1,10 +1,14 @@
 <script>
 export default {
-  data() {return { str: 'active valid'}},
+  data() {return {obj: {
+			adone: true,
+			selected:  false,
+		}}},
 }
 </script>
 <template>
-  <p :class="str">Something Wrong</p>
+  <p :class="obj.adone">Something Wrong</p>
+  <p :class="obj.selected">Something Wrong</p>
 </template>
 
 <style scoped>

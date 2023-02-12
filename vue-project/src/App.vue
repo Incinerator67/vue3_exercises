@@ -1,15 +1,16 @@
 <script>
 export default {
-  data() {return {	choice: 'my favorite program languege - is '}},
+  data() {return {selected: 'value1'}},
 }
 </script>
 <template>
-  <input name="radio" type="radio" v-model="choice" value="v1">
-    <p>{{ arr }}PHP</p>
-  <input name="radio" type="radio" v-model="choice" value="v2">
-    <p>{{ arr }}C#</p>
-  <input name="radio" type="radio" v-model="choice" value="v3">
-    <p>{{ arr }}Assembler</p>
+ <select v-model="selected">
+		<option>value1</option>
+		<option>value2</option>
+		<option>value3</option>
+	</select>
+	
+	<p>{{ selected }}</p>
 </template>
 <style scoped>
 header {line-height: 1.5;}

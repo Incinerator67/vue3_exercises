@@ -4,11 +4,18 @@ export default {
 			adone: true,
 			selected:  false,
 		}}},
+  methods: {
+	  setDone: function() {this.obj.hidden = false;}
+  },
+  power:{
+    setDone2: function() {this.obj.hidden = true;}
+  }
 }
 </script>
 <template>
-  <p :class="obj.adone">Something Wrong</p>
-  <p :class="obj.selected">Something Wrong</p>
+  <p :class="obj">Something Wrong</p>
+  <button @click="setDone">text1</button>
+  <button @click="setDone2">text2</button>
 </template>
 
 <style scoped>

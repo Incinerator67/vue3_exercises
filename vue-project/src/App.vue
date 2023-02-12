@@ -1,12 +1,32 @@
 <script>
 export default {
-  data() {return {items: [1, 2, 3]}},
+  data() {return {products: [
+			{
+				name: 'product1',
+				price: 100,
+				quantity: 5
+			},
+			{
+				name: 'product2',
+				price: 200,
+				quantity: 4
+			},
+			{
+				name: 'product3',
+				price: 300,
+				quantity: 3
+			},
+		]}},
 }
 </script>
 <template>
-  	<template v-for="elem in items">
-      <ul>{{ elem }}</ul>
-    </template>
+  <table v-for="elem in products">
+    <tr v-for="product in elem">
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.quantity}}</td>
+    </tr>
+  </table>
 </template>
 
 <style scoped>

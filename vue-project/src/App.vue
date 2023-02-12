@@ -1,16 +1,20 @@
 <script>
 export default {
-  data() {return {arr: ['x', 'y', 'z']}},
-  methods: {
-    toggle: function() {this.isAuth = !this.isAuth;}
-  }
+  data() {return {user1: '100$',user2: '200$',user3: '300$'}},
 }
 </script>
 <template>
-  	<p v-for="(elem, key) in arr">
-		 <ul>{{ key+1 }}</ul> 
-     {{ elem }}
-	</p>
+  	<ul>
+      <li v-for="(elem,index) in user1">
+        user1 - {{ elem }} - {{ index }}  
+      </li>
+      <li v-for="elem in user2">
+        user2 - {{ elem }} - {{ index }} 
+      </li>
+      <li v-for="elem in user3">
+        user3 - {{ elem }} - {{ index }} 
+      </li>
+    </ul>
 </template>
 
 <style scoped>

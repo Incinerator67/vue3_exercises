@@ -1,21 +1,13 @@
 <script>
 export default {
-  data() {return {name: 'Edem',surn: 'Osmanov',cost:'10',amount:'25'}},
-  computed: {
-    full: function() {return this.name + ' ' + this.surn;},
-    price:function() {return this.cost * this.amount;}
-  },
+  data() {return {Wrong: 'Ссылка'}},
   methods: {
-    change: function() {this.cost = '100',this.price = this.cost * this.amount;;}
+    show: function(str) {alert(this.Wrong);}
   }
 }
 </script>
 <template>
-	<p>{{ name }}</p>
-	<p>{{ surn }}</p>
-	<p>{{ full }}</p>
-  <p>{{ price }}</p>
-  <button @click="change">change_cost</button>
+  <a href="Ssilka" @click="show(num1)">{{ Wrong }}</a>
 </template>
 
 <style scoped>

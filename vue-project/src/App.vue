@@ -1,16 +1,17 @@
 <script>
 export default {
   data() {return {isAuth: true}},
-
-  
-}
+  methods: {
+    toggle: function() {this.isAuth = !this.isAuth;}
+  }
 </script>
 <template>
+  <button @click="toggle">toggle</button>
   <div v-if="isAuth">
 		<p>+++</p>
 		<p>+++</p>
-		<p>+++</p>
 	</div>
+  <div v-else>Something Wrong</div>
 </template>
 
 <style scoped>

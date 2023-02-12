@@ -1,10 +1,11 @@
 <script>
 export default {
-  data() {return {}} 
+  data() {return {message: 'Something_Wrong'}} 
 }
 </script>
 <template>
-  <p :style="{color: 'yellow', fontSize: '30px'}">Something Wrong</p>
+  <input v-model="message">
+	<p>{{ message }}</p>
 </template>
 
 <style scoped>

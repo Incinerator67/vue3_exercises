@@ -1,14 +1,10 @@
 <script>
 export default {
-  data() {return {selected: 'value1',
-  options: ['Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday','Sunday']}},
+  data() {return {isDisabled: true}},
 }
 </script>
 <template>
-  <select v-model="selected">
-		<option v-for="option in options">{{ option }}</option>
-	</select>
-	<p>{{ selected }}</p>
+  <button v-bind:disabled="isDisabled">btn</button>
 </template>
 <style scoped>
 header {line-height: 1.5;}

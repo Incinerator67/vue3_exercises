@@ -1,9 +1,6 @@
 <script>
 export default {
-  data() {return {obj: {
-			adone: true,
-			selected:  false,
-		}}},
+  data() {return {active: true, valid: false}},
   methods: {
 	  setDone: function() {this.obj.hidden = false;}
   },
@@ -13,9 +10,9 @@ export default {
 }
 </script>
 <template>
-  <p :class="obj">Something Wrong</p>
-  <button @click="setDone">text1</button>
-  <button @click="setDone2">text2</button>
+  <p :class="{active: true, 'valid': false}">
+		text
+	</p>
 </template>
 
 <style scoped>

@@ -1,15 +1,13 @@
 <script>
 export default {
-  data() {return {selected: 'value1'}},
+  data() {return {selected: 'value1',
+  options: ['Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday','Sunday']}},
 }
 </script>
 <template>
- <select v-model="selected">
-		<option>value1</option>
-		<option>value2</option>
-		<option>value3</option>
+  <select v-model="selected">
+		<option v-for="option in options">{{ option }}</option>
 	</select>
-	
 	<p>{{ selected }}</p>
 </template>
 <style scoped>

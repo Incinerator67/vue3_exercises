@@ -1,10 +1,17 @@
 <script>
 export default {
-  data() {return {hidden: true,}},
+  data() {return {visible: true}},
+  methods: {
+    hide: function() {this.visible = false;}
+  },
+  mide: function() {this.visible = true;}
+  
 }
 </script>
 <template>
-  <p v-if="!hidden">Something Wrong</p>
+  <button @click="hide">hide</button>
+  <button @click="mide">mide</button>
+	<p v-if="visible">Something Wrong</p>
 </template>
 
 <style scoped>

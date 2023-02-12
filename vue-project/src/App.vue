@@ -1,19 +1,14 @@
 <script>
 export default {
-  data() {return {arr: ['a', 'b', 'c']}},
-  methods:{
-	  add: function() {this.arr.push('xxx');}
-  }
+  data() {return { str: 'active valid'}},
 }
 </script>
 <template>
-  <p>1</p>
-	<p>2</p>
+  <p :class="str">Something Wrong</p>
 </template>
 
 <style scoped>
 header {line-height: 1.5;}
-p {color: red;}
 
 .logo {
   display: block;

@@ -7,14 +7,13 @@ export default {
 }
 </script>
 <template>
-  <p v-for="elem in arr">
-		{{ elem }}
-	</p>
-	<button @click="add">add</button>
+  <p>1</p>
+	<p>2</p>
 </template>
 
 <style scoped>
 header {line-height: 1.5;}
+p {color: red;}
 
 .logo {
   display: block;

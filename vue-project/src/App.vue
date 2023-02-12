@@ -1,17 +1,15 @@
 <script>
 export default {
-  data() {return {arr: []}},
+  data() {return {	choice: 'my favorite program languege - is '}},
 }
 </script>
 <template>
-  <ul>
-    <input type="checkbox" v-model="arr" value="PHP">
+  <input name="radio" type="radio" v-model="choice" value="v1">
     <p>{{ arr }}PHP</p>
-	<input type="checkbox" v-model="arr" value="C#">
+  <input name="radio" type="radio" v-model="choice" value="v2">
     <p>{{ arr }}C#</p>
-	<input type="checkbox" v-model="arr" value="Assembler">
+  <input name="radio" type="radio" v-model="choice" value="v3">
     <p>{{ arr }}Assembler</p>
-  </ul>
 </template>
 <style scoped>
 header {line-height: 1.5;}

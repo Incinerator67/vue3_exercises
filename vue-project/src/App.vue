@@ -1,10 +1,13 @@
 <script>
 export default {
-  data() {return {isDisabled: true}},
+  data() {return {submit: '',sub: ''}},
 }
 </script>
 <template>
-  <button v-bind:disabled="isDisabled">btn</button>
+  <input @keyup.enter="submit" v-model="submit"/>
+  <p>{{ submit }}</p>
+  <input @keyup.page-down="onPageDown" v-model="sub"/>
+  <p>{{ sub }}</p>
 </template>
 <style scoped>
 header {line-height: 1.5;}

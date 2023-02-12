@@ -1,16 +1,27 @@
 <script>
 export default {
-  data() {return {items: [1, -2, 3, -4, 5]}},
+  data() {return {products: [
+			{
+				id: 1,
+				name: 'product1',
+			},
+			{
+				id: 2,
+				name: 'product2',
+			},
+			{
+				id: 3,
+				name: 'product3',
+			},
+		]}},
 }
 </script>
 <template>
   <ul>
-		<template v-for="elem in items">
-			<li v-if="elem >= 0">
-				{{ elem }}
-			</li>
-		</template>
-	</ul>
+    <p v-for="user in products" :key="user.id">
+      {{ user.name }}
+	  </p>
+  </ul>
 </template>
 
 <style scoped>

@@ -1,16 +1,14 @@
 <script>
 export default {
-  data() {return {isAdmin: true}},
-  methods: {
-    toggle: function() {this.isAdmin = false;}
-  }
+  data() {return {num: 3}},
+
   
 }
 </script>
 <template>
-  <button @click="toggle">toggle</button>
-	<p v-if="isAdmin">Something Wrong</p>
-  <p v-else>Something Wrong 2</p>
+	<p v-if="num === 1 || num === 2">
+		one or two
+	</p>
 </template>
 
 <style scoped>

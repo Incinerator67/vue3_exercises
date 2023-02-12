@@ -1,14 +1,10 @@
 <script>
 export default {
-  data() {return {obj: {
-    isValid: true,
-		isDisabled: true
-  }} 
-}
+  data() {return {}} 
 }
 </script>
 <template>
-  <p :class="{active: isValid, error: isDisabled}">Something Wrong</p>
+  <p :style="{color: 'yellow', fontSize: '30px'}">Something Wrong</p>
 </template>
 
 <style scoped>

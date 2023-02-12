@@ -1,18 +1,14 @@
 <script>
 export default {
-  data() {return {active: true, valid: false}},
-  methods: {
-	  setDone: function() {this.obj.hidden = false;}
-  },
-  power:{
-    setDone2: function() {this.obj.hidden = true;}
-  }
+  data() {return {obj: {
+    isValid: true,
+		isDisabled: true
+  }} 
+}
 }
 </script>
 <template>
-  <p :class="{active: true, 'valid': false}">
-		text
-	</p>
+  <p :class="{active: isValid, error: isDisabled}">Something Wrong</p>
 </template>
 
 <style scoped>

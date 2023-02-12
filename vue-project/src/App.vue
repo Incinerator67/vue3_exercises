@@ -2,14 +2,16 @@
 export default {
   data() {return {visible: true}},
   methods: {
-    hide: function() {this.visible = false;}
-  },
-  toggle: function() {this.visible = !this.visible;}
+    toggle: function() {this.visible = !this.visible;}
+  }
+  
 }
 </script>
 <template>
-  <button @click="toggle">toggle</button>
-	<p v-if="visible">text</p>
+  <button @click="toggle">
+		{{ visible ? 'hide' : 'show' }}
+	</button>
+  <p v-if="visible">Something Wrong</p>
 </template>
 
 <style scoped>

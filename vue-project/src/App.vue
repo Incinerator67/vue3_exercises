@@ -4,14 +4,12 @@ export default {
   methods: {
     hide: function() {this.visible = false;}
   },
-  mide: function() {this.visible = true;}
-  
+  toggle: function() {this.visible = !this.visible;}
 }
 </script>
 <template>
-  <button @click="hide">hide</button>
-  <button @click="mide">mide</button>
-	<p v-if="visible">Something Wrong</p>
+  <button @click="toggle">toggle</button>
+	<p v-if="visible">text</p>
 </template>
 
 <style scoped>

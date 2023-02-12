@@ -1,15 +1,11 @@
 <script>
 export default {
-  data() {return {num: 2,res: 0}},
-  methods: {
-	  calc: function() {this.res = Math.sqrt(this.num);}
-  }
+  data() {return {text: ''}},
 }
 </script>
 <template>
-  <p>{{ res }}</p>
-	<input v-model="num">
-	<button v-on:click="calc">work</button>
+  <textarea v-model="text"></textarea>
+	<ul>{{ text }}</ul>
 </template>
 <style scoped>
 header {line-height: 1.5;}

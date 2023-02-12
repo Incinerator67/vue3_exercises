@@ -1,12 +1,17 @@
 <script>
 export default {
-  data() {return {checked: true}},
+  data() {return {arr: []}},
 }
 </script>
 <template>
-  <input type="checkbox" v-model="checked">
-  <div v-if="checked == true"><p>{{ checked ? 'yes' : 'no' }}</p></div>
-	<div v-else>{{ checked ? 'yes' : 'no' }}</div>
+  <ul>
+    <input type="checkbox" v-model="arr" value="PHP">
+    <p>{{ arr }}PHP</p>
+	<input type="checkbox" v-model="arr" value="C#">
+    <p>{{ arr }}C#</p>
+	<input type="checkbox" v-model="arr" value="Assembler">
+    <p>{{ arr }}Assembler</p>
+  </ul>
 </template>
 <style scoped>
 header {line-height: 1.5;}

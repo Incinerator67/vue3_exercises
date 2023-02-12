@@ -1,20 +1,12 @@
 <script>
 export default {
-  data() {return {user1: '100$',user2: '200$',user3: '300$'}},
+  data() {return {items: [1, 2, 3]}},
 }
 </script>
 <template>
-  	<ul>
-      <li v-for="(elem,index) in user1">
-        user1 - {{ elem }} - {{ index }}  
-      </li>
-      <li v-for="elem in user2">
-        user2 - {{ elem }} - {{ index }} 
-      </li>
-      <li v-for="elem in user3">
-        user3 - {{ elem }} - {{ index }} 
-      </li>
-    </ul>
+  	<template v-for="elem in items">
+      <ul>{{ elem }}</ul>
+    </template>
 </template>
 
 <style scoped>

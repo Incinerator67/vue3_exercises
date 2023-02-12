@@ -1,31 +1,13 @@
 <script>
 export default {
-  data() {return {products: [
-			{
-				name: 'product1',
-				price: 100,
-				quantity: 5
-			},
-			{
-				name: 'product2',
-				price: 200,
-				quantity: 4
-			},
-			{
-				name: 'product3',
-				price: 300,
-				quantity: 3
-			},
-		]}},
+  data() {},
 }
 </script>
 <template>
   <table v-for="elem in products">
-    <tr v-for="product in elem">
-      <td>{{product.name}}</td>
-      <td>{{product.price}}</td>
-      <td>{{product.quantity}}</td>
-    </tr>
+    <div v-for="num in 30">
+		  <p>абзац - {{ num }}</p>
+    </div>
   </table>
 </template>
 

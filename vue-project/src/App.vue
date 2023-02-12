@@ -1,11 +1,12 @@
 <script>
 export default {
-  data() {return {text: ''}},
+  data() {return {checked: true}},
 }
 </script>
 <template>
-  <textarea v-model="text"></textarea>
-	<ul>{{ text }}</ul>
+  <input type="checkbox" v-model="checked">
+  <div v-if="checked == true"><p>{{ checked ? 'yes' : 'no' }}</p></div>
+	<div v-else>{{ checked ? 'yes' : 'no' }}</div>
 </template>
 <style scoped>
 header {line-height: 1.5;}

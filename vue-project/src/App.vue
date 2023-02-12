@@ -1,14 +1,17 @@
 <script>
 export default {
-  data() {return {num: 3}},
+  data() {age: 25},
 
   
 }
 </script>
 <template>
-	<p v-if="num === 1 || num === 2">
-		one or two
+	<p v-if="age === 19 || age === 25">
+		молодой человек
 	</p>
+  <p v-else-if="age >= 26">Мужчина</p>
+  <p v-else>подросток</p>
+
 </template>
 
 <style scoped>

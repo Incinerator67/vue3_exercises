@@ -27,13 +27,7 @@ import User from './components/icons/User.vue'
   }
 </script>
 <template>
-  <User
-		v-for="user in users"
-    :id="user.id"
-		:name="user.name"
-		:salary="user.salary"
-		:age="user.age"
-	/>
+  <p>Однонаправленный поток данных в Vue</p>
 </template>
 <style scoped>
 header {line-height: 1.5;}

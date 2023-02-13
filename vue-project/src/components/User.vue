@@ -1,8 +1,10 @@
 <script>
 	export default {
-		data() {return {name: 'john'}}
+		props: ['name', 'surn'],
+		data() {return {}}
 	}
 </script>
 <template>
 	{{ name }}
+	{{ surn }}
 </template>

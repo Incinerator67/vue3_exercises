@@ -3,7 +3,7 @@ import User from './components/icons/User.vue'
 	export default {components: {User}}
 </script>
 <template>
-  <User/>
+  <User name="Edem" surn="Osmanov" />
 </template>
 <style scoped>
 header {line-height: 1.5;}

@@ -3,9 +3,8 @@ import User from './components/icons/User.vue'
 	export default {
     components: {User}
     methods: {
-      func() {alert('xxx');},
-      handle() {this.$emit('show');}
-  }
+      func(arg1, arg2) {console.log(arg1, arg2);}
+    }
   }
 </script>
 <template>

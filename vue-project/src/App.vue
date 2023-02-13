@@ -3,8 +3,7 @@ import User from './components/icons/User.vue'
 	export default {components: {User}}
 </script>
 <template>
-  <p v-for="elem in arg">{{ elem }}</p>
-  <User :arg="true" />
+  <User :name="name" :salary="salary" :age="age" />
 </template>
 <style scoped>
 header {line-height: 1.5;}

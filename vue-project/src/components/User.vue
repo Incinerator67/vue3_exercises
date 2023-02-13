@@ -1,9 +1,13 @@
 <script>
 	export default {
-		props: ['name', 'surn'],
-		data() {return {arg: [1,2,3]}}
-	}
+        data() {return {
+			name: 'name',
+            salary: '300$',
+            age:'60'
+        }}
+    }
 </script>
 <template>
-    {{ arg }}
+	{{ name }}
+	{{ surn }}
 </template>

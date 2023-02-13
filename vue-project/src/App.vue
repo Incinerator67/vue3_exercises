@@ -1,9 +1,14 @@
 <script>
 import User from './components/icons/User.vue'
-	export default {components: {User}}
+	export default {components: {User},
+  props: {
+		name: String,
+		surn: String
+	},
+  }
 </script>
 <template>
-  <User :name="name" :salary="salary" :age="age" />
+  <User :name="name" :surn="surn" />
 </template>
 <style scoped>
 header {line-height: 1.5;}

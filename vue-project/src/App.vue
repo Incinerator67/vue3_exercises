@@ -1,10 +1,9 @@
 <script>
-export default {
-  data() {}
-},
+import User from './components/icons/User.vue'
+	export default {components: {User}}
 </script>
 <template>
-  <p>Работа с компонентами в Vue</p>
+  <User/>
 </template>
 <style scoped>
 header {line-height: 1.5;}

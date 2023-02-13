@@ -1,12 +1,16 @@
 <script>
 	export default {
 	emits: ['show', 'xxx', 'yyy'],
-	data() {return {arg1: 3,arg2: 4}},
+	data() {return {}},
 	methods: {
-		handle() {this.$emit('show', 'xxx', 'yyy');}
-    }
+		handle() {
+		this.$emit('show', 'xxx', 'yyy');
+	}
+}
 }
 </script>
 <template>
-    <button @click="handle">btn</button>
+	<button @click="$emit('show', 'xxx', 'yyy')">
+		btn
+	</button>
 </template>

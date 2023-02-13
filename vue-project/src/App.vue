@@ -3,7 +3,7 @@ import User from './components/icons/User.vue'
 	export default {
     components: {User}
     methods: {
-      func(arg1, arg2) {console.log(arg1, arg2);}
+      func() {alert('xxx');}
     }
   }
 </script>
